@@ -1,0 +1,30 @@
+@import './variables';
+
+@mixin btnRegular($color: $primary) {
+    padding: $md-space;
+    background-color: $color;
+    color: $white;
+    border-radius: $radius;
+    border: none;
+    transition: $transition;
+    font-size: 16px;
+
+    &:hover {
+        background-color: darken($color, 5%);
+    }
+}
+
+@mixin btnOutline($color: $primary) {
+    padding: $md-space;
+    background-color: transparent;
+    color: $color;
+    border-radius: $radius;
+    border: 2px solid $color;
+    transition: $transition;
+    font-size: 16px;
+
+    &:hover {
+        background-color: $color;
+        color: $white;
+    }
+}

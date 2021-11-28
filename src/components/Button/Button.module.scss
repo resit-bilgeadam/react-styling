@@ -1,0 +1,28 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+.btn-regular-primary {
+    @include btnRegular;
+}
+
+.btn-regular-secondary {
+    @include btnRegular($secondary);
+}
+
+.btn-regular-accent {
+    @include btnRegular($accent);
+}
+
+.btn-outline-primary {
+    @include btnOutline;
+}
+
+.btn-outline-secondary {
+    @include btnOutline($secondary);
+}
+
+.btn-outline-accent {
+    @include btnOutline($accent);
+}
+
+
